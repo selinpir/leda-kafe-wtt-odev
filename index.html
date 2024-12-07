@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>LEDA KAFE</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  </head>
+
+  </head>
+<body>
+
+<!-- Üstteki Bağlantılar -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s3">
+      <a href="#" class="w3-button w3-block w3-black">ANA SAYFA</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#about" class="w3-button w3-block w3-black">HAKKIMIZDA</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#menu" class="w3-button w3-block w3-black">MENÜ</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#where" class="w3-button w3-block w3-black">İLETİŞİM</a>
+    </div>
+  </div>
+</div>
+
+<!-- Başlık ve Görsel -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+    <span class="w3-tag">Deneyimli ellerde pişirilen kahveler</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white" style="font-size:90px">LEDA<br>KAFE</span>
+  </div>
+  <div class="w3-display-bottomright w3-center w3-padding-large">
+    <span class="w3-text-white">Sadeliği hisset</span>
+  </div>
+</header>
+
+<!-- Sayfa İçeriği -->
+<div class="w3-sand w3-grayscale w3-large">
+
+<!-- Hakkımızda -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">KAFE HAKKINDA</span></h5>
+    <p>Kafe, bilgisayarla çalışan ve sakin bir ortam arayan insanlar için kurulmuştur. Amacımız, hem çalışmak hem de dinlenmek isteyenlere huzurlu bir alan sunmaktır. Menümüzde taze kahvaltılar, lezzetli öğle yemekleri, çeşitli yan ürünler ve sağlıklı salatalar bulunmaktadır. Ayrıca, misafirlerimize kaliteli hizmet sunmayı ve keyifli bir deneyim yaşatmayı hedefliyoruz. Sessiz ve konforlu atmosferimizle gününüzü daha verimli ve keyifli hale getirmek için buradayız.</p>
+    <p><i>"Doğanın sunduğu ürünleri tam zamanında kullanın. Taze, yeni tatlıdır."</i></p>
+    <p>Şef: Evrim Arslan</p>
+    <img src="https://www.w3schools.com/w3images/coffeeshop.jpg" style="width:100%;max-width:1000px" class="w3-margin-top">
+    <p><strong>Çalışma saatleri:</strong> Her gün sabah 6'dan akşam 5'e kadar.</p>
+    <p><strong>Adres:</strong> 15 Adr Sokak, 5015, NY</p>
+  </div>
+</div>
+
+<!-- Menü -->
+<div class="w3-container" id="menu">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">MENÜ</span></h5>
+    <div class="w3-row w3-center w3-card w3-padding">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Eat');" id="myLink">
+        <div class="w3-col s6 tablink">Yiyecek</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
+        <div class="w3-col s6 tablink">İçecek</div>
+      </a>
+    </div>
+
+    <div id="Eat" class="w3-container menu w3-padding-48 w3-card">
+        <h5>Ekmek Sepeti</h5>
+        <p class="w3-text-grey">Taze meyveli ekmek ve kek çeşitleri - 55 TL</p><br>
+        <h5>Meyveli Granola</h5>
+        <p class="w3-text-grey">Bal ile tatlandırılmış yulaf ve kuruyemişler - 70 TL</p><br>
+        <h5>Belçika Waffle</h5>
+        <p class="w3-text-grey">Vanilya aromalı hamur - 80 TL</p><br>
+        <h5>Menemen</h5>
+        <p class="w3-text-grey">Taze domates, biber ve yumurta ile hazırlanmış Türk klasiği - 100 TL</p><br>
+        <h5>Makarna Salatası</h5>
+        <p class="w3-text-grey">Taze sebzeler ve sos eşliğinde - 120 TL</p><br>
+        <h5>Margherita Pizza</h5>
+        <p class="w3-text-grey">Taze domates, mozzarella ve fesleğen - 250 TL</p><br>      
+        <h5>Pepperoni Pizza</h5>
+        <p class="w3-text-grey">Mozzarella, pepperoni dilimleri ve özel baharatlar - 300 TL</p><br>
+      </div>
+      
+      <div id="Drinks" class="w3-container menu w3-padding-48 w3-card">
+        <h5>Kahve</h5>
+        <p class="w3-text-grey">Sade kahve - 50 TL</p><br>
+        <h5>Çikolatalı Espresso</h5>
+        <p class="w3-text-grey">Süt ile servis edilir - 45 TL</p><br>
+        <h5>Latte</h5>
+        <p class="w3-text-grey">Süt ve espresso karışımı - 50 TL</p><br>
+        <h5>Türk Çayı</h5>
+        <p class="w3-text-grey">Demlikte demlenmiş, klasik Türk çayı - 30 TL</p><br>
+        <h5>Limonata</h5>
+        <p class="w3-text-grey">Taze limonlardan hazırlanmış ev yapımı limonata - 40 TL</p><br>
+      </div>
+
+      <div class="slider">
+        <div class="slide-track">
+          <div class="slide">
+            <img src="https://www.w3schools.com/w3images/coffeehouse.jpg" alt="Kek Çeşitleri" />
+          </div>
+          <div class="slide">
+            <img src="https://www.w3schools.com/w3images/coffeehouse2.jpg" alt="Kahve ve Kek" />
+          </div>
+          <div class="slide">
+            <img src="https://www.w3schools.com/w3images/pizza.jpg" alt="Pizza Margherita" />
+          </div>
+          <div class="slide">
+            <img src="img/pepperoni.jpeg" alt="Pizza Pepperoni" />
+          </div>
+          <div class="slide">
+            <img src="img/cikolatali-kek.jpg" alt="Kek ve Çikolata" />
+          </div>
+          <div class="slide">
+            <img src="img/veje-pizza.jpg" alt="Vejetaryen Pizza" />
+          </div>          
+          <div class="slide">
+            <img src="https://www.w3schools.com/w3images/coffeehouse.jpg" alt="Kek Çeşitleri" />
+          </div>
+          <div class="slide">
+            <img src="https://www.w3schools.com/w3images/coffeehouse2.jpg" alt="Kahve ve Kek" />
+          </div>
+          <div class="slide">
+            <img src="img/1.jpeg" alt="" />
+          </div>
+          <div class="slide">
+            <img src="img/2.jpeg" alt="" />
+          </div>
+          <div class="slide">
+            <img src="img/3.jpeg" alt="" />
+          </div>
+          <div class="slide">
+            <img src="img/pepperoni.jpeg" alt="Pizza Pepperoni" />
+          </div>
+          <div class="slide">
+            <img src="img/cikolatali-kek.jpg" alt="Kek ve Çikolata" />
+          </div>
+          <div class="slide">
+            <img src="img/veje-pizza.jpg" alt="Vejetaryen Pizza" />
+          </div> 
+        </div>
+      </div>
+      
+      
+</div>
+
+
+<!-- İletişim -->
+<div class="w3-container" id="where" style="padding-bottom:32px;">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">NEREDEN BİZİ BULABİLİRSİNİZ</span></h5>
+    <p>Bizi şu adreste bulabilirsiniz.</p>
+    <!-- harita -->
+<center>
+<iframe  id="map"  src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d266537
+.87287954905!2d22.134740308559422!3d36.91857152558449!3m2!1i1024!2i768!4f13.1!5e0!3m
+2!1str!2str!4v1678745512825!5m2!1str!2str"
+width="400" height="300" style="border:0;"  allowfullscreen="" loading="lazy"
+referrerpolicy="no-referrer-when-downgrade"></iframe>
+</center>
+<!-- harita -->
+
+    <img src="https://www.w3schools.com/w3images/map.jpg" class="w3-image" style="width:100%">
+    <p>Etkinlikleriniz için catering hizmeti sunuyoruz. </p>
+    <p><strong>Rezervasyon</strong> için mesaj bırakabilirsiniz:</p>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Adınız" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="Kaç kişi" required name="People"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" required name="date"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Mesajınız" required name="Message"></p>
+      <p><button class="w3-button w3-black" type="submit">MESAJ GÖNDER</button></p>
+    </form>
+  </div>
+</div>
+</div>
+
+<h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">ŞUBELERİMİZ</span></h5>
+<div class="w3-row-padding w3-center">
+  <!-- Şube 1: Atiye -->
+  <div class="w3-col m4">
+    <div class="w3-card">
+      <img src="img/1.jpeg" alt="The House Cafe Atiye" style="width:100%">
+      <div class="w3-container">
+        <h4><b>The House Cafe Atiye</b></h4>
+        <p>2002 yılında açıldı, 160 kişilik kapasite.</p>
+        <p><b>Adres:</b> Harbiye Mahallesi, Atiye Sokak No: 10-1 Nişantaşı-Teşvikiye / İstanbul</p>
+        <p><b>Telefon:</b> 444 4 THC (842) / 02122592377</p>
+        <p><b>Açılış Saatleri:</b> 10:00 – 00:00</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Şube 2: Corner -->
+  <div class="w3-col m4">
+    <div class="w3-card">
+      <img src="img/2.jpeg" alt="The House Cafe Corner" style="width:100%">
+      <div class="w3-container">
+        <h4><b>The House Cafe Corner</b></h4>
+        <p>2008 yılında açıldı, 80 kişilik kapasite.</p>
+        <p><b>Adres:</b> Teşvikiye Mahallesi, Teşvikiye Caddesi No: 2/A Nişantaşı – Teşvikiye / İstanbul</p>
+        <p><b>Telefon:</b> 444 4 THC (842) / 0212 327 17 74</p>
+        <p><b>Açılış Saatleri:</b> 8:00 – 00:30</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Şube 3: Kıyı -->
+  <div class="w3-col m4">
+    <div class="w3-card">
+      <img src="img/3.jpeg" alt="The House Kıyı" style="width:100%">
+      <div class="w3-container">
+        <h4><b>The House Kıyı</b></h4>
+        <p>175 kişilik kapasite, deniz manzarası.</p>
+        <p><b>Adres:</b> 2 Kıyı Marina, Kordonboyu Cd. No:4 / D Büyükçekmece / İstanbul</p>
+        <p><b>Telefon:</b> +90 533 070 00 83</p>
+        <p><b>Açılış Saatleri:</b> 9:00 – 01:00 (Cuma-Cumartesi)</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">  
+
+  <p>Bu site W3Schools Spaces ile yapılmıştır.</p>
+    <p>Tüm hakları saklıdır. &copy; Leda Kafe</p>
+</footer>
+
+<script>
+// Menü Sekme
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
